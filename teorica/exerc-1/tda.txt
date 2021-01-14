@@ -1,0 +1,31 @@
+TAD Conta Corrente
+
+Valores
+  string titular
+  float  saldo
+  float  limite
+
+Operacoes
+  ContaCorrente criar(string titular, float saldo, float limite)
+    Pre-Condicao: Nenhuma
+    Pos-Condicao: this.titular = titular; this.saldo = saldo; this.limite = limite;
+
+  float consultarSaldo(contaCorrentePtr conta)
+    Pre-Condicao: contaCorrentePtr != nullptr
+    Pos-Condicao: retorna o valor do saldo
+
+  string consultarTitular(contaCorrentePtr conta)
+    Pre-Condicao: contaCorrentePtr != nullptr
+    Pos-Condicao: retorna o(a) titular da conta
+
+  int depositar(contaCorrentePtr conta, float valor)
+    Pre-Condicao: contaCorrentePtr != null
+    Pos-Condicao: soma `valor` ao campo saldo da conta e retorna um inteiro simbolizando se a operacao teve exito ou nao
+
+  int sacar(contaCorrentePtr conta, float valor)
+    Pre-Condicao: contaCorrentePtr != null; saldo da conta ser maior ou igual ao valor a ser sacado; (saldo da conta - valor) >= limite
+    Pos-Condicao: subtrai `valor` ao campo saldo da conta e retorna um inteiro simbolizando se a operacao texe exito ou nao
+
+  int transferir(contaCorrentePtr conta, contaCorrentePtr credor, float valor)
+    Pre-Condicao: conta e credor != nullptr; saldo da conta `devedora` ser maior ou igual ao valor a ser transferido; (saldo da conta devedora - valor >= limite)
+    Pos-Condicao: executa a operacao `sacar(conta, valor)` para a conta devedora, e a operacao `depositar(credor, valor)` para a conta credora
