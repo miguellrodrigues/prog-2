@@ -53,10 +53,10 @@ int withdraw(ACCOUNT account, float amount) {
     if (canWithdraw(account, amount)) {
         account->balance -= amount;
 
-        return 1;
+        return 0;
     }
 
-    return 0;
+    return 1;
 }
 
 int transfer(ACCOUNT account, ACCOUNT account1, float amount) {
@@ -66,10 +66,10 @@ int transfer(ACCOUNT account, ACCOUNT account1, float amount) {
         withdraw(account, amount);
         deposit(account1, amount);
 
-        return 1;
+        return 0;
     }
 
-    return 0;
+    return 1;
 }
 
 void print(ACCOUNT account) {
