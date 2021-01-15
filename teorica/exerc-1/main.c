@@ -8,17 +8,14 @@ int main() {
     print(account);
     print(account1);
 
-    int resultTransfer = transfer(account, account1, 200.0F);
+    int resultTransfer = transfer(account, account1, 150.0F);
 
     if (resultTransfer) {
         print(account);
         print(account1);
     } else {
-        printf("\nNao foi possivel realizar a transferencia");
+        printf("\nTransfer failed, insufficient funds\n");
     }
-
-    del(account);
-    del(account1);
 
     return 0;
 }

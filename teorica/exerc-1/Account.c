@@ -26,7 +26,7 @@ ACCOUNT create(char owner[16], float balance, float limit) {
 int canWithdraw(ACCOUNT account, float amount) {
     assert(account != NULL);
 
-    return (account->balance - amount) >= account->limit;
+    return (account->balance - amount) >= (account->limit * -1);
 }
 
 float getBalance(ACCOUNT account) {
@@ -53,10 +53,10 @@ int withdraw(ACCOUNT account, float amount) {
     if (canWithdraw(account, amount)) {
         account->balance -= amount;
 
-        return 0;
+        return 1;
     }
 
-    return 1;
+    return 0;
 }
 
 int transfer(ACCOUNT account, ACCOUNT account1, float amount) {
@@ -66,10 +66,10 @@ int transfer(ACCOUNT account, ACCOUNT account1, float amount) {
         withdraw(account, amount);
         deposit(account1, amount);
 
-        return 0;
+        return 1;
     }
 
-    return 1;
+    return 0;
 }
 
 void print(ACCOUNT account) {
@@ -78,7 +78,7 @@ void print(ACCOUNT account) {
     printf("\nLimit: %.3f\n", account->limit);
 }
 
-void del(ACCOUNT account) {
+void delete(ACCOUNT account) {
     assert (account != NULL);
 
     free(account);
