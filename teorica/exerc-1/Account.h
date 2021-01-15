@@ -23,6 +23,6 @@ int canWithdraw(ACCOUNT account, float amount);
 
 void print(ACCOUNT account);
 
-void delete(ACCOUNT account);
+void del(ACCOUNT account);
 
 #endif //TAD_ACCOUNT_H

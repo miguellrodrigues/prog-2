@@ -78,7 +78,7 @@ void print(ACCOUNT account) {
     printf("\nLimit: %.3f\n", account->limit);
 }
 
-void delete(ACCOUNT account) {
+void del(ACCOUNT account) {
     assert (account != NULL);
 
     free(account);

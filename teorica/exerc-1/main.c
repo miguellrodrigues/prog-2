@@ -17,5 +17,8 @@ int main() {
         printf("\nTransfer failed, insufficient funds\n");
     }
 
+    del(account);
+    del(account1);
+
     return 0;
 }
