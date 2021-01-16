@@ -1,0 +1,1 @@
+/bin/cc -g   CMakeFiles/trab.dir/main.c.o CMakeFiles/trab.dir/set.c.o  -o trab 

@@ -1,0 +1,3 @@
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/build/CMakeFiles/rebuild_cache.dir
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/build/CMakeFiles/edit_cache.dir
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/build/CMakeFiles/trab.dir
