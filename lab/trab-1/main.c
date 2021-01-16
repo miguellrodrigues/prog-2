@@ -11,9 +11,9 @@ int main(void) {
   insert(set, 3);
   insert(set, 4);
 
-  insert(set1, 2);
+  insert(set1, 1);
   insert(set1, 4);
-  insert(set1, 5);
+  insert(set1, 6);
 
   SET u = merge(set, set1);
 

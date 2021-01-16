@@ -1,4 +1,5 @@
 #include "set.h"
+#include <string.h>
 #include <malloc.h>
 #include <assert.h>
 
@@ -211,29 +212,33 @@ SET intersection(SET set, SET set1) {
 SET difference(SET set, SET set1) {
     assert(set != NULL && set1 != NULL);
 
-    unsigned int setItems = setItemsCount(set);
-    unsigned int set1Items = setItemsCount(set1);
+    SET inter = intersection(set, set1);
 
-    unsigned int size = setItems > set1Items ? setItems : setItems == set1Items ? setItems : set1Items;
+    int *commonItems = malloc(sizeof (int) * inter->count);
+    memcpy(commonItems, inter->items, sizeof (int) * inter->count);
 
-    int *common = (int *) malloc(size * sizeof(int));
+    int *copy = malloc(sizeof (int) * set->count);
 
-    size = 0;
+    unsigned int size = 0;
 
-    for (unsigned int i = 0; i < setItems; i++) {
-        for (unsigned int j = 0; j < set1Items; j++) {
-            if (valueInSet(set, set1->items[j]) && !valueInArray(common, set1->items[j], size))
-                common[++size] = set1->items[j];
-        }
+    for (unsigned int i = 0; i < set->count; i++) {
+        int item = set->items[i];
+
+        if (valueInArray(commonItems, item, inter->count))
+            continue;
+
+        copy[size++] = item;
     }
 
-    SET pSet = malloc(sizeof(SET));
+    copy = realloc(copy, size);
 
-    pSet->capacity = size;
-    pSet->count = size;
-    pSet->items = common;
+    SET r = malloc(sizeof(SET));
 
-    assert(pSet != NULL);
+    r->capacity = size;
+    r->count = size;
+    r->items = copy;
 
-    return pSet;
+    assert(r != NULL);
+
+    return r;
 }

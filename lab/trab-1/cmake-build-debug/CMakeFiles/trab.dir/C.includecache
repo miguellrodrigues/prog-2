@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/main.c
+stdio.h
+-
 set.h
 /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.h
-malloc.h
--
-assert.h
--
 
 /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.h
 
