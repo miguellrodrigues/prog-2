@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/miguellr/Documentos/projects/prog2/lab/trab-1/main.c
-stdio.h
--
-set.h
-/home/miguellr/Documentos/projects/prog2/lab/trab-1/set.h
-
 /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c
 set.h
 /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.h

@@ -4,17 +4,24 @@
 int main(void) {
 
   SET set = create(4);
-  SET set1 = create(2);
+  SET set1 = create(3);
 
-  insert(set, 2);
-  insert(set, 4);
-  insert(set, 8);
   insert(set, 1);
+  insert(set, 2);
+  insert(set, 3);
+  insert(set, 4);
 
-  insert(set1, 1);
+  insert(set1, 2);
   insert(set1, 4);
+  insert(set1, 5);
 
-  SET d = merge(set, set1);
+  SET u = merge(set, set1);
+
+  SET i = intersection(set, set1);
+
+  SET d = difference(set, set1);
+
+  int k = 0;
 
   return 0;
 }

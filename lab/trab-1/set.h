@@ -25,4 +25,6 @@ SET merge(SET set, SET set1);
 
 SET intersection(SET set, SET set1);
 
+SET difference(SET set, SET set1);
+
 #endif

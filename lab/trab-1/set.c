@@ -41,7 +41,9 @@ unsigned int findValueIndex(SET set, int value) {
 int valueInSet(SET set, int value) {
     assert(set != NULL);
 
-    for (unsigned int i = 0; i < setItemsCount(set); i++) {
+    unsigned int count = setItemsCount(set);
+
+    for (unsigned int i = 0; i < count; i++) {
         if (set->items[i] == value) {
             return 1;
         }
@@ -130,7 +132,6 @@ unsigned int contains(SET set, SET set1) {
 
         return equality == setItemsCount(set1);
     }
-    
 
     return 0;
 }
@@ -148,10 +149,16 @@ SET merge(SET set, SET set1) {
     size = 0;
 
     for (unsigned int i = 0; i < setItems; i++) {
+        if (valueInArray(copy, set->items[i], size))
+            continue;
+
+        copy[size++] = set->items[i];
+
         for (unsigned int j = 0; j < set1Items; j++) {
-            if (set->items[i] != set->items[j]) {
-                copy[size++] = set->items[i];
-            }
+            if (valueInArray(copy, set1->items[j], size))
+                continue;
+
+            copy[size++] = set1->items[j];
         }
     }
 
@@ -160,9 +167,73 @@ SET merge(SET set, SET set1) {
     SET r = malloc(sizeof(SET));
 
     r->capacity = size;
+    r->count = size;
     r->items = copy;
 
     assert(r != NULL);
 
     return r;
+}
+
+SET intersection(SET set, SET set1) {
+    assert(set != NULL && set1 != NULL);
+
+    unsigned int setItems = setItemsCount(set);
+    unsigned int set1Items = setItemsCount(set1);
+
+    unsigned int size = setItems > set1Items ? setItems : setItems == set1Items ? setItems : set1Items;
+
+    int *toCopy = (int *) malloc(size * sizeof(int));
+
+    size = 0;
+
+    for (unsigned int i = 0; i < setItems; i++) {
+        for (unsigned int j = 0; j < set1Items; j++) {
+            if (set->items[i] == set1->items[j]) {
+                toCopy[size++] = set->items[i];
+            }
+        }
+    }
+
+    toCopy = realloc(toCopy, size);
+
+    SET r = malloc(sizeof(SET));
+
+    r->capacity = size;
+    r->count = size;
+    r->items = toCopy;
+
+    assert(r != NULL);
+
+    return r;
+}
+
+SET difference(SET set, SET set1) {
+    assert(set != NULL && set1 != NULL);
+
+    unsigned int setItems = setItemsCount(set);
+    unsigned int set1Items = setItemsCount(set1);
+
+    unsigned int size = setItems > set1Items ? setItems : setItems == set1Items ? setItems : set1Items;
+
+    int *common = (int *) malloc(size * sizeof(int));
+
+    size = 0;
+
+    for (unsigned int i = 0; i < setItems; i++) {
+        for (unsigned int j = 0; j < set1Items; j++) {
+            if (valueInSet(set, set1->items[j]) && !valueInArray(common, set1->items[j], size))
+                common[++size] = set1->items[j];
+        }
+    }
+
+    SET pSet = malloc(sizeof(SET));
+
+    pSet->capacity = size;
+    pSet->count = size;
+    pSet->items = common;
+
+    assert(pSet != NULL);
+
+    return pSet;
 }
