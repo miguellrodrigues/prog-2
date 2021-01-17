@@ -7,9 +7,9 @@ SET create(unsigned int capacity);
 
 SET createAltern(unsigned int capacity, unsigned int count, int *items);
 
-int valueInSet(SET set, int value);
+unsigned int valueInSet(SET set, int value);
 
-int canInsert(SET set, int value);
+unsigned int canInsert(SET set, int value);
 
 unsigned int setItemsCount(SET set);
 

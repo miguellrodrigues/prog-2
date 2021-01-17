@@ -123,6 +123,33 @@ trab/fast:
 	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/build
 .PHONY : trab/fast
 
+Set.o: Set.c.o
+
+.PHONY : Set.o
+
+# target to build an object file
+Set.c.o:
+	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/Set.c.o
+.PHONY : Set.c.o
+
+Set.i: Set.c.i
+
+.PHONY : Set.i
+
+# target to preprocess a source file
+Set.c.i:
+	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/Set.c.i
+.PHONY : Set.c.i
+
+Set.s: Set.c.s
+
+.PHONY : Set.s
+
+# target to generate assembly for a file
+Set.c.s:
+	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/Set.c.s
+.PHONY : Set.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,33 +177,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/main.c.s
 .PHONY : main.c.s
 
-set.o: set.c.o
-
-.PHONY : set.o
-
-# target to build an object file
-set.c.o:
-	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/set.c.o
-.PHONY : set.c.o
-
-set.i: set.c.i
-
-.PHONY : set.i
-
-# target to preprocess a source file
-set.c.i:
-	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/set.c.i
-.PHONY : set.c.i
-
-set.s: set.c.s
-
-.PHONY : set.s
-
-# target to generate assembly for a file
-set.c.s:
-	$(MAKE) -f CMakeFiles/trab.dir/build.make CMakeFiles/trab.dir/set.c.s
-.PHONY : set.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... trab"
+	@echo "... Set.o"
+	@echo "... Set.i"
+	@echo "... Set.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... set.o"
-	@echo "... set.i"
-	@echo "... set.s"
 .PHONY : help
 
 

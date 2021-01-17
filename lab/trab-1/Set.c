@@ -53,7 +53,7 @@ unsigned int findValueIndex(SET set, int value) {
     return 0;
 }
 
-int valueInSet(SET set, int value) {
+unsigned int valueInSet(SET set, int value) {
     assert(set != NULL);
 
     unsigned int count = setItemsCount(set);
@@ -67,7 +67,7 @@ int valueInSet(SET set, int value) {
     return 0;
 }
 
-int valueInArray(const int *array, int value, unsigned int count) {
+unsigned int valueInArray(const int *array, int value, unsigned int count) {
     for (unsigned int i = 0; i < count; i++) {
         if (array[i] == value) {
             return 1;
@@ -77,7 +77,7 @@ int valueInArray(const int *array, int value, unsigned int count) {
     return 0;
 }
 
-int canInsert(SET set, int value) {
+unsigned int canInsert(SET set, int value) {
     assert(set != NULL);
 
     int inSet = valueInSet(set, value);
@@ -168,13 +168,13 @@ SET merge(SET set, SET set1) {
             continue;
 
         copy[size++] = set->items[i];
+    }
 
-        for (unsigned int j = 0; j < set1Items; j++) {
-            if (valueInArray(copy, set1->items[j], size))
-                continue;
+    for (unsigned int j = 0; j < set1Items; j++) {
+        if (valueInArray(copy, set1->items[j], size))
+            continue;
 
-            copy[size++] = set1->items[j];
-        }
+        copy[size++] = set1->items[j];
     }
 
     copy = realloc(copy, size);
@@ -250,7 +250,7 @@ void print(SET set) {
 
     if (!empty(set)) {
         for (unsigned int i = 0; i < setItemsCount(set); i++) {
-            printf("\nIndex: %d | Value: %d\n", i, set->items[i]);
+            printf("\nIndex: %d | Value: %d", i, set->items[i]);
         }
     }
 }

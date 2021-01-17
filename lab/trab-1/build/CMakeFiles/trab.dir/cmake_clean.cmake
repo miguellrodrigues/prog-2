@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/trab.dir/Set.c.o"
   "CMakeFiles/trab.dir/main.c.o"
-  "CMakeFiles/trab.dir/set.c.o"
   "trab"
   "trab.pdb"
 )

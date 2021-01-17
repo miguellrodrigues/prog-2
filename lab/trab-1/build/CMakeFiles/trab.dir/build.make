@@ -70,29 +70,29 @@ CMakeFiles/trab.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/trab.dir/main.c.s"
 	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/miguellr/Documentos/projects/prog2/lab/trab-1/main.c -o CMakeFiles/trab.dir/main.c.s
 
-CMakeFiles/trab.dir/set.c.o: CMakeFiles/trab.dir/flags.make
-CMakeFiles/trab.dir/set.c.o: ../set.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miguellr/Documentos/projects/prog2/lab/trab-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/trab.dir/set.c.o"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/trab.dir/set.c.o   -c /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c
+CMakeFiles/trab.dir/Set.c.o: CMakeFiles/trab.dir/flags.make
+CMakeFiles/trab.dir/Set.c.o: ../Set.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miguellr/Documentos/projects/prog2/lab/trab-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/trab.dir/Set.c.o"
+	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/trab.dir/Set.c.o   -c /home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.c
 
-CMakeFiles/trab.dir/set.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/trab.dir/set.c.i"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c > CMakeFiles/trab.dir/set.c.i
+CMakeFiles/trab.dir/Set.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/trab.dir/Set.c.i"
+	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.c > CMakeFiles/trab.dir/Set.c.i
 
-CMakeFiles/trab.dir/set.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/trab.dir/set.c.s"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c -o CMakeFiles/trab.dir/set.c.s
+CMakeFiles/trab.dir/Set.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/trab.dir/Set.c.s"
+	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.c -o CMakeFiles/trab.dir/Set.c.s
 
 # Object files for target trab
 trab_OBJECTS = \
 "CMakeFiles/trab.dir/main.c.o" \
-"CMakeFiles/trab.dir/set.c.o"
+"CMakeFiles/trab.dir/Set.c.o"
 
 # External object files for target trab
 trab_EXTERNAL_OBJECTS =
 
 trab: CMakeFiles/trab.dir/main.c.o
-trab: CMakeFiles/trab.dir/set.c.o
+trab: CMakeFiles/trab.dir/Set.c.o
 trab: CMakeFiles/trab.dir/build.make
 trab: CMakeFiles/trab.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/miguellr/Documentos/projects/prog2/lab/trab-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable trab"
