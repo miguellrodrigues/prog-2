@@ -15,11 +15,25 @@ SET create(unsigned int capacity) {
 
     setPtr->capacity = capacity;
     setPtr->items = malloc(sizeof(int) * capacity);
+    setPtr->count = 0;
 
     assert(setPtr != NULL);
 
     return setPtr;
 }
+
+SET createAltern(unsigned int capacity, unsigned int count, int *items) {
+    SET setPtr = malloc(sizeof(SET));
+
+    setPtr->capacity = capacity;
+    setPtr->items = items;
+    setPtr->count = count;
+
+    assert(setPtr != NULL);
+
+    return setPtr;
+}
+
 
 unsigned int setItemsCount(SET set) {
     assert(set != NULL);
@@ -165,15 +179,7 @@ SET merge(SET set, SET set1) {
 
     copy = realloc(copy, size);
 
-    SET r = malloc(sizeof(SET));
-
-    r->capacity = size;
-    r->count = size;
-    r->items = copy;
-
-    assert(r != NULL);
-
-    return r;
+    return createAltern(size, size, copy);
 }
 
 SET intersection(SET set, SET set1) {
@@ -184,29 +190,21 @@ SET intersection(SET set, SET set1) {
 
     unsigned int size = setItems > set1Items ? setItems : setItems == set1Items ? setItems : set1Items;
 
-    int *toCopy = (int *) malloc(size * sizeof(int));
+    int *copy = (int *) malloc(size * sizeof(int));
 
     size = 0;
 
     for (unsigned int i = 0; i < setItems; i++) {
         for (unsigned int j = 0; j < set1Items; j++) {
             if (set->items[i] == set1->items[j]) {
-                toCopy[size++] = set->items[i];
+                copy[size++] = set->items[i];
             }
         }
     }
 
-    toCopy = realloc(toCopy, size);
+    copy = realloc(copy, size);
 
-    SET r = malloc(sizeof(SET));
-
-    r->capacity = size;
-    r->count = size;
-    r->items = toCopy;
-
-    assert(r != NULL);
-
-    return r;
+    return createAltern(size, size, copy);
 }
 
 SET difference(SET set, SET set1) {
@@ -232,15 +230,7 @@ SET difference(SET set, SET set1) {
 
     copy = realloc(copy, size);
 
-    SET r = malloc(sizeof(SET));
-
-    r->capacity = size;
-    r->count = size;
-    r->items = copy;
-
-    assert(r != NULL);
-
-    return r;
+    return createAltern(size, size, copy);
 }
 
 unsigned int equals(SET set, SET set1) {

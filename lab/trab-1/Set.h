@@ -5,6 +5,8 @@ typedef struct Set *SET;
 
 SET create(unsigned int capacity);
 
+SET createAltern(unsigned int capacity, unsigned int count, int *items);
+
 int valueInSet(SET set, int value);
 
 int canInsert(SET set, int value);

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.c
+Set.h
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.h
+string.h
+-
+malloc.h
+-
+assert.h
+-
+
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.h
+
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/main.c
+stdio.h
+-
+Set.h
+/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.h
+
