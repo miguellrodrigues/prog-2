@@ -3,17 +3,16 @@
 
 int main(void) {
 
-    SET set = create(4);
+    SET set = create(3);
     SET set1 = create(3);
 
     insert(set, 1);
     insert(set, 2);
     insert(set, 3);
-    insert(set, 4);
 
     insert(set1, 1);
-    insert(set1, 7);
-    insert(set1, 4);
+    insert(set1, 2);
+    insert(set1, 3);
 
     SET setsMerge = merge(set, set1);
 

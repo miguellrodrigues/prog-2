@@ -53,20 +53,6 @@ unsigned int findValueIndex(SET set, int value) {
     return 0;
 }
 
-unsigned int valueInSet(SET set, int value) {
-    assert(set != NULL);
-
-    unsigned int count = setItemsCount(set);
-
-    for (unsigned int i = 0; i < count; i++) {
-        if (set->items[i] == value) {
-            return 1;
-        }
-    }
-
-    return 0;
-}
-
 unsigned int valueInArray(const int *array, int value, unsigned int count) {
     for (unsigned int i = 0; i < count; i++) {
         if (array[i] == value) {
@@ -75,6 +61,14 @@ unsigned int valueInArray(const int *array, int value, unsigned int count) {
     }
 
     return 0;
+}
+
+unsigned int valueInSet(SET set, int value) {
+    assert(set != NULL);
+
+    unsigned int count = setItemsCount(set);
+
+    return valueInArray(set->items, value, count);
 }
 
 unsigned int canInsert(SET set, int value) {
