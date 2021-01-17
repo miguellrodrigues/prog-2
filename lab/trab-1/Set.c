@@ -151,7 +151,7 @@ SET merge(SET set, SET set1) {
     unsigned int setItems = setItemsCount(set);
     unsigned int set1Items = setItemsCount(set1);
 
-    unsigned int size = setItems > set1Items ? setItems : setItems == set1Items ? setItems : set1Items;
+    unsigned int size = set->capacity + set1->capacity;
 
     int *copy = malloc(sizeof(int) * size);
 
