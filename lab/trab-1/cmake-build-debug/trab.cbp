@@ -76,13 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.c">
+			<Option target="trab"/>
+		</Unit>
+		<Unit filename="/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.h">
+			<Option target="trab"/>
+		</Unit>
 		<Unit filename="/home/miguellr/Documentos/projects/prog2/lab/trab-1/main.c">
-			<Option target="trab"/>
-		</Unit>
-		<Unit filename="/home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c">
-			<Option target="trab"/>
-		</Unit>
-		<Unit filename="/home/miguellr/Documentos/projects/prog2/lab/trab-1/set.h">
 			<Option target="trab"/>
 		</Unit>
 		<Unit filename="/home/miguellr/Documentos/projects/prog2/lab/trab-1/CMakeLists.txt">

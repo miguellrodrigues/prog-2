@@ -1,9 +1,9 @@
-#include "set.h"
+#include "Set.h"
 #include <string.h>
 #include <malloc.h>
 #include <assert.h>
 
-struct set {
+struct Set {
     unsigned int capacity;
     unsigned int count;
 
@@ -31,12 +31,12 @@ unsigned int findValueIndex(SET set, int value) {
     assert(set != NULL);
 
     for (unsigned int i = 0; i < setItemsCount(set); i++) {
-      if (set->items[i] == value) {
-        return i;
+        if (set->items[i] == value) {
+            return i;
+        }
     }
-  }
 
-  return 0;
+    return 0;
 }
 
 int valueInSet(SET set, int value) {
@@ -116,7 +116,7 @@ unsigned int removeItem(SET set, int value) {
 
 unsigned int contains(SET set, SET set1) {
     assert(set != NULL && set1 != NULL);
-    
+
     if (set->capacity >= set1->capacity) {
         unsigned int equality = 0;
 
@@ -214,10 +214,10 @@ SET difference(SET set, SET set1) {
 
     SET inter = intersection(set, set1);
 
-    int *commonItems = malloc(sizeof (int) * inter->count);
-    memcpy(commonItems, inter->items, sizeof (int) * inter->count);
+    int *commonItems = malloc(sizeof(int) * inter->count);
+    memcpy(commonItems, inter->items, sizeof(int) * inter->count);
 
-    int *copy = malloc(sizeof (int) * set->count);
+    int *copy = malloc(sizeof(int) * set->count);
 
     unsigned int size = 0;
 
@@ -241,4 +241,26 @@ SET difference(SET set, SET set1) {
     assert(r != NULL);
 
     return r;
+}
+
+unsigned int equals(SET set, SET set1) {
+    return contains(set, set1) && contains(set1, set);
+}
+
+unsigned int max(SET set) {
+    return setItemsCount(set) == set->capacity;
+}
+
+unsigned int empty(SET set) {
+    return setItemsCount(set) == 0;
+}
+
+void print(SET set) {
+    assert(set != NULL);
+
+    if (!empty(set)) {
+        for (unsigned int i = 0; i < setItemsCount(set); i++) {
+            printf("\nIndex: %d | Value: %d\n", i, set->items[i]);
+        }
+    }
 }

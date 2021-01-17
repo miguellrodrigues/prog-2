@@ -1,7 +1,7 @@
 #ifndef TAD_SET_H
 #define TAD_SET_H
 
-typedef struct set *SET;
+typedef struct Set *SET;
 
 SET create(unsigned int capacity);
 
@@ -26,5 +26,13 @@ SET merge(SET set, SET set1);
 SET intersection(SET set, SET set1);
 
 SET difference(SET set, SET set1);
+
+unsigned int equals(SET set, SET set1);
+
+unsigned int max(SET set);
+
+unsigned int empty(SET set);
+
+void print(SET set);
 
 #endif

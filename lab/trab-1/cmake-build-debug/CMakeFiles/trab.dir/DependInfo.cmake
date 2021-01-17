@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/miguellr/Documentos/projects/prog2/lab/trab-1/Set.c" "/home/miguellr/Documentos/projects/prog2/lab/trab-1/cmake-build-debug/CMakeFiles/trab.dir/Set.c.o"
   "/home/miguellr/Documentos/projects/prog2/lab/trab-1/main.c" "/home/miguellr/Documentos/projects/prog2/lab/trab-1/cmake-build-debug/CMakeFiles/trab.dir/main.c.o"
-  "/home/miguellr/Documentos/projects/prog2/lab/trab-1/set.c" "/home/miguellr/Documentos/projects/prog2/lab/trab-1/cmake-build-debug/CMakeFiles/trab.dir/set.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
