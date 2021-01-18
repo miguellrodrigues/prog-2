@@ -78,7 +78,7 @@ unsigned int canInsert(SET set, int value) {
 
     unsigned int itemsCount = setItemsCount(set);
 
-    return (!inSet && itemsCount < set->capacity);
+    return (value == (int) value && !inSet && itemsCount < set->capacity);
 }
 
 unsigned int canRemove(SET set, int value) {
