@@ -37,4 +37,6 @@ unsigned int empty(SET set);
 
 void print(SET set);
 
+void del(SET set);
+
 #endif

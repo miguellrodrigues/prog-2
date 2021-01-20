@@ -34,7 +34,7 @@ SET createAltern(unsigned int capacity, unsigned int count, int *items) {
     return setPtr;
 }
 
-
+// cardinalidade
 unsigned int setItemsCount(SET set) {
     assert(set != NULL);
 
@@ -63,6 +63,7 @@ unsigned int valueInArray(const int *array, int value, unsigned int count) {
     return 0;
 }
 
+//valor pertence ao conjunto
 unsigned int valueInSet(SET set, int value) {
     assert(set != NULL);
 
@@ -89,6 +90,7 @@ unsigned int canRemove(SET set, int value) {
     return inSet;
 }
 
+//inserir elemento no conjunto
 unsigned int insert(SET set, int value) {
     assert(set != NULL);
 
@@ -104,6 +106,7 @@ unsigned int insert(SET set, int value) {
     return 0;
 }
 
+//remover elemento do conjunto
 unsigned int removeItem(SET set, int value) {
     assert(set != NULL);
 
@@ -122,6 +125,7 @@ unsigned int removeItem(SET set, int value) {
     return 0;
 }
 
+//conjunto contem outro conjunto
 unsigned int contains(SET set, SET set1) {
     assert(set != NULL && set1 != NULL);
 
@@ -145,6 +149,7 @@ unsigned int contains(SET set, SET set1) {
     return 0;
 }
 
+//uniao entre dois conjuntos
 SET merge(SET set, SET set1) {
     assert(set != NULL && set1 != NULL);
 
@@ -176,6 +181,7 @@ SET merge(SET set, SET set1) {
     return createAltern(size, size, copy);
 }
 
+//intersecao entre dois conjntos
 SET intersection(SET set, SET set1) {
     assert(set != NULL && set1 != NULL);
 
@@ -201,6 +207,7 @@ SET intersection(SET set, SET set1) {
     return createAltern(size, size, copy);
 }
 
+//diferenca entra dois conjuntos
 SET difference(SET set, SET set1) {
     assert(set != NULL && set1 != NULL);
 
@@ -227,18 +234,22 @@ SET difference(SET set, SET set1) {
     return createAltern(size, size, copy);
 }
 
+//equalidade entre dois conjuntos
 unsigned int equals(SET set, SET set1) {
     return contains(set, set1) && contains(set1, set);
 }
 
+//verfica se o conjunto atingiu sua capacidade maxima
 unsigned int max(SET set) {
     return setItemsCount(set) == set->capacity;
 }
 
+//verifica se o conjunto esta vazio
 unsigned int empty(SET set) {
     return setItemsCount(set) == 0;
 }
 
+//imprime um conjunto
 void print(SET set) {
     assert(set != NULL);
 
@@ -247,4 +258,11 @@ void print(SET set) {
             printf("\nIndex: %d | Value: %d", i, set->items[i]);
         }
     }
+}
+
+//libera o espaco de memoria do conjunto
+void del(SET set) {
+    assert (set != NULL);
+
+    free(set);
 }

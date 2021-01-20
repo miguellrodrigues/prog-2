@@ -54,5 +54,8 @@ int main(void) {
 
     printf("\n");
 
+    del(set);
+    del(set1);
+
     return 0;
 }
