@@ -1,0 +1,1 @@
+/bin/cc    CMakeFiles/tad.dir/main.c.o CMakeFiles/tad.dir/Account.c.o  -o tad 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/miguellr/Documentos/projects/prog2/teorica/exerc-1/Account.h
+
+/home/miguellr/Documentos/projects/prog2/teorica/exerc-1/main.c
+stdio.h
+-
+Account.h
+/home/miguellr/Documentos/projects/prog2/teorica/exerc-1/Account.h
+

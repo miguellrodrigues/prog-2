@@ -1,0 +1,3 @@
+/home/miguellr/Documentos/projects/prog2/teorica/exerc-1/build/CMakeFiles/rebuild_cache.dir
+/home/miguellr/Documentos/projects/prog2/teorica/exerc-1/build/CMakeFiles/edit_cache.dir
+/home/miguellr/Documentos/projects/prog2/teorica/exerc-1/build/CMakeFiles/tad.dir

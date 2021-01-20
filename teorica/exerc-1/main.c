@@ -2,7 +2,7 @@
 #include "Account.h"
 
 int main() {
-    ACCOUNT account = create("Seu Madruga", 100.0F, 50.0F);
+    ACCOUNT account = create("Seu Madruga", 100.0F, 20.0F);
     ACCOUNT account1 = create("Seu Barriga", 1000.0F, 50.0F);
 
     print(account);
