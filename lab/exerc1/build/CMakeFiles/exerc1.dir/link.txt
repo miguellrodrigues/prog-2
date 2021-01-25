@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exerc1.dir/main.cpp.o -o exerc1 
