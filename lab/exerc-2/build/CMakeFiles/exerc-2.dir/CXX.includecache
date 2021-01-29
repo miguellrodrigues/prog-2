@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/miguel/projects/dev/prog-2/lab/exerc-2/Account.hpp
+string
+/home/miguel/projects/dev/prog-2/lab/exerc-2/string
+
+/home/miguel/projects/dev/prog-2/lab/exerc-2/main.cpp
+Account.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-2/Account.hpp
+iostream
+-
+
