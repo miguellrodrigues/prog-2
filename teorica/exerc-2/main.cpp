@@ -2,8 +2,6 @@
 
 class Temperatura {
   public:
-    void setTemperatura(double valorGraus, char novaEscala);
-    
     dougle getTemperatura() { return this.graus; }
     char getEscala() { return this.escala; }
     
