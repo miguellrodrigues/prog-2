@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.hpp
+
+/home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp
+Pedagio.hpp
+/home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.hpp
+iostream
+-
+
