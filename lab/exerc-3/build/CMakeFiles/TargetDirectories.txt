@@ -1,0 +1,3 @@
+/home/miguel/projects/dev/prog-2/lab/exerc-3/build/CMakeFiles/rebuild_cache.dir
+/home/miguel/projects/dev/prog-2/lab/exerc-3/build/CMakeFiles/exerc-3.dir
+/home/miguel/projects/dev/prog-2/lab/exerc-3/build/CMakeFiles/edit_cache.dir

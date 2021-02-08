@@ -9,7 +9,7 @@ int main() {
   account1.print();
   account2.print();
 
-  unsigned int resultTransfer = account2.transfer(account1, 1600);
+  unsigned int resultTransfer = account2.transfer(account1, 1501);
 
   if (resultTransfer) {
     account1.print();

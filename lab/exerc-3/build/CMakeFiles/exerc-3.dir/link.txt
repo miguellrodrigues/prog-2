@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exerc-3.dir/Point.cpp.o CMakeFiles/exerc-3.dir/main.cpp.o -o exerc-3 
