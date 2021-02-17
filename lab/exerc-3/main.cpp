@@ -10,6 +10,6 @@ int main(void) {
     Point ponto2(5.0, -4.0);
 
     cout << ponto1.distance(&ponto2) << endl;
-
+ 
     return 0;
 }

@@ -1,0 +1,33 @@
+1)
+
+  A) Herança
+
+  B) Privados
+
+  C) Objetos
+
+  D) Publicos
+
+  E) Private
+
+  F) Construtor
+
+  G) Public, Protected
+
+  H) Protected, Protected
+
+  I) Protected, Protected
+
+  J) Protected
+
+2)
+
+  A) Verdadeiro
+
+  B) Verdadeiro
+
+  C) Verdadeiro
+
+3)
+
+  

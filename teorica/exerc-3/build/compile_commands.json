@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/miguel/projects/dev/prog-2/teorica/exerc-3/build",
+  "command": "/bin/g++-9   -g -std=gnu++14 -o CMakeFiles/exerc-3.dir/Pedagio.cpp.o -c /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp",
+  "file": "/home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp"
+},
+{
+  "directory": "/home/miguel/projects/dev/prog-2/teorica/exerc-3/build",
+  "command": "/bin/g++-9   -g -std=gnu++14 -o CMakeFiles/exerc-3.dir/main.cpp.o -c /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp",
+  "file": "/home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp"
+}
+]

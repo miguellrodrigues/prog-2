@@ -79,28 +79,28 @@ include CMakeFiles/exerc-3.dir/flags.make
 CMakeFiles/exerc-3.dir/Pedagio.cpp.o: CMakeFiles/exerc-3.dir/flags.make
 CMakeFiles/exerc-3.dir/Pedagio.cpp.o: ../Pedagio.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miguel/projects/dev/prog-2/teorica/exerc-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exerc-3.dir/Pedagio.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exerc-3.dir/Pedagio.cpp.o -c /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exerc-3.dir/Pedagio.cpp.o -c /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp
 
 CMakeFiles/exerc-3.dir/Pedagio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exerc-3.dir/Pedagio.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp > CMakeFiles/exerc-3.dir/Pedagio.cpp.i
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp > CMakeFiles/exerc-3.dir/Pedagio.cpp.i
 
 CMakeFiles/exerc-3.dir/Pedagio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exerc-3.dir/Pedagio.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp -o CMakeFiles/exerc-3.dir/Pedagio.cpp.s
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miguel/projects/dev/prog-2/teorica/exerc-3/Pedagio.cpp -o CMakeFiles/exerc-3.dir/Pedagio.cpp.s
 
 CMakeFiles/exerc-3.dir/main.cpp.o: CMakeFiles/exerc-3.dir/flags.make
 CMakeFiles/exerc-3.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miguel/projects/dev/prog-2/teorica/exerc-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exerc-3.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exerc-3.dir/main.cpp.o -c /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exerc-3.dir/main.cpp.o -c /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp
 
 CMakeFiles/exerc-3.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exerc-3.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp > CMakeFiles/exerc-3.dir/main.cpp.i
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp > CMakeFiles/exerc-3.dir/main.cpp.i
 
 CMakeFiles/exerc-3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exerc-3.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp -o CMakeFiles/exerc-3.dir/main.cpp.s
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miguel/projects/dev/prog-2/teorica/exerc-3/main.cpp -o CMakeFiles/exerc-3.dir/main.cpp.s
 
 # Object files for target exerc-3
 exerc__3_OBJECTS = \
