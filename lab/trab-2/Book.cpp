@@ -1,6 +1,7 @@
 #include "Book.hpp"
 
 #include <utility>
+#include <sstream>
 
 Book::Book(string title, float price, unsigned int pages) : Publication(std::move(title), price), pages(pages) {
 
@@ -15,11 +16,10 @@ void Book::setPages(unsigned int pages) {
 }
 
 string Book::toString() {
-    string res = Publication::toString();
+    std::stringstream res;
 
-    res.append("Pages: ");
-    res.append(std::to_string(getPages()));
-    res.append("\n");
+    res << Publication::toString()
+        << "Pages: " << getPages() << "\n";
 
-    return res;
+    return res.str();
 }

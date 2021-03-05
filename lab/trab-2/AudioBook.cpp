@@ -5,6 +5,7 @@
 #include "AudioBook.hpp"
 
 #include <utility>
+#include <sstream>
 
 AudioBook::AudioBook(string title, float price, AudioBook::Duration duration): Publication(std::move(title), price), duration(duration) {
 
@@ -19,17 +20,12 @@ void AudioBook::setDuration(AudioBook::Duration duration) {
 }
 
 string AudioBook::toString() {
-    string res = Publication::toString();
+    std::stringstream res;
 
-    res.append("Hours: ");
-    res.append(std::to_string(getDuration().hours));
-    res.append("\n");
-    res.append("Minutes: ");
-    res.append(std::to_string(getDuration().minutes));
-    res.append("\n");
-    res.append("Seconds: ");
-    res.append(std::to_string(getDuration().seconds));
-    res.append("\n");
+    res << Publication::toString()
+        << "Hours: " << getDuration().hours << "\n"
+        << "Minutes: " << getDuration().minutes << "\n"
+        << "Seconds: " << getDuration().seconds << "\n";
 
-    return res;
+    return res.str();
 }

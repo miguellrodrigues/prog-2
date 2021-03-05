@@ -6,19 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.cpp
-Publication.hpp
-/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
-string
--
+/home/miguel/projects/dev/prog-2/lab/trab-2/AudioBook.cpp
+AudioBook.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/AudioBook.hpp
 utility
 -
 sstream
 -
-iomanip
+
+/home/miguel/projects/dev/prog-2/lab/trab-2/AudioBook.hpp
+Publication.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
+string
+-
+
+/home/miguel/projects/dev/prog-2/lab/trab-2/Book.cpp
+Book.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/Book.hpp
+utility
+-
+sstream
+-
+
+/home/miguel/projects/dev/prog-2/lab/trab-2/Book.hpp
+Publication.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
+string
 -
 
 /home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
 string
+-
+
+/home/miguel/projects/dev/prog-2/lab/trab-2/main.cpp
+Book.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/Book.hpp
+Publication.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
+AudioBook.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/AudioBook.hpp
+iostream
 -
 

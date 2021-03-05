@@ -25,7 +25,7 @@ public:
 
     void setDuration(Duration duration);
 
-    virtual string toString() override;
+    string toString() override;
 
 private:
     Duration duration;
