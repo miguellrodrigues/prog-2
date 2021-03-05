@@ -8,7 +8,7 @@ using std::string;
 class Publication {
 
 public:
-    Publication(string  title, float price);
+    Publication(string title, float price);
 
     string getTitle();
 

@@ -11,8 +11,8 @@ unsigned int Book::getPages() const {
     return this->pages;
 }
 
-void Book::setPages(unsigned int pages) {
-    this->pages = pages;
+void Book::setPages(unsigned int i) {
+    this->pages = i;
 }
 
 string Book::toString() {

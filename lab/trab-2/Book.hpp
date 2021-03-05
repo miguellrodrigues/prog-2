@@ -13,7 +13,7 @@ public:
 
     unsigned int getPages() const;
 
-    void setPages(unsigned int pages);
+    void setPages(unsigned int i);
 
     string toString() override;
 

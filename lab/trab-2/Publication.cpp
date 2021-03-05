@@ -4,7 +4,7 @@
 #include <sstream>
 #include <iomanip>
 
-Publication::Publication(string  title, float price): title(std::move(title)), price(price) {
+Publication::Publication(string title, float price) : title(std::move(title)), price(price) {
 
 }
 

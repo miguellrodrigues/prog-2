@@ -23,7 +23,7 @@ public:
 
     Duration getDuration();
 
-    void setDuration(Duration duration);
+    void setDuration(Duration d);
 
     string toString() override;
 
