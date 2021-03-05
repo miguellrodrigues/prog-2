@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lista-5.dir/main.cpp.o  -o lista-5 

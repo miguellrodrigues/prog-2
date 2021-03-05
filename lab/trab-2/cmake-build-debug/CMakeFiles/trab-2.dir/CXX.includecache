@@ -34,6 +34,18 @@ Publication.hpp
 string
 -
 
+/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.cpp
+Publication.hpp
+/home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
+string
+-
+utility
+-
+sstream
+-
+iomanip
+-
+
 /home/miguel/projects/dev/prog-2/lab/trab-2/Publication.hpp
 string
 -

@@ -1,0 +1,3 @@
+/home/miguel/projects/dev/prog-2/lab/lista-5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/miguel/projects/dev/prog-2/lab/lista-5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/miguel/projects/dev/prog-2/lab/lista-5/cmake-build-debug/CMakeFiles/lista-5.dir
