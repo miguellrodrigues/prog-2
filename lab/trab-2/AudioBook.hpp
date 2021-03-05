@@ -14,6 +14,7 @@ class AudioBook : public Publication {
 
 public:
     struct duration {
+        unsigned int hours;
         unsigned int minutes;
         unsigned int seconds;
     } typedef Duration;
@@ -23,6 +24,8 @@ public:
     Duration getDuration();
 
     void setDuration(Duration duration);
+
+    virtual string toString() override;
 
 private:
     Duration duration;

@@ -12,11 +12,13 @@ public:
 
     string getTitle();
 
-    float getPrice();
+    float getPrice() const;
 
-    void setTitle(string title);
+    void setTitle(string t);
 
-    void setPrice(float price);
+    void setPrice(float d);
+
+    virtual string toString();
 
 private:
     string title;

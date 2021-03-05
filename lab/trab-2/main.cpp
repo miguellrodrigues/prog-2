@@ -1,9 +1,20 @@
 #include "Book.hpp"
 #include "Publication.hpp"
+#include "AudioBook.hpp"
 
-int main(void) {
+#include <iostream>
 
-    Book *p = new Book("", 1.0, 12);
+using std::cout;
+using std::endl;
+
+int main() {
+    auto *tlp = new Book("O Pequeno Príncipe", 22.9, 112);
+
+    auto *hdg = new AudioBook("O homem de giz", 31.12, {10, 11, 5});
+
+    cout << tlp->toString() << endl;
+
+    cout << hdg->toString() << endl;
 
     return 0;
 }

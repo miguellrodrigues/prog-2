@@ -11,9 +11,11 @@ class Book : public Publication {
 public:
     Book(string title, float price, unsigned int pages);
 
-    unsigned int getPages();
+    unsigned int getPages() const;
 
     void setPages(unsigned int pages);
+
+    string toString() override;
 
 private:
     unsigned int pages;
