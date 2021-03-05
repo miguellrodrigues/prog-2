@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lp2_3.dir/main.cpp.o CMakeFiles/lp2_3.dir/Base.cpp.o CMakeFiles/lp2_3.dir/forms/Quadrado.cpp.o CMakeFiles/lp2_3.dir/forms/Circulo.cpp.o CMakeFiles/lp2_3.dir/forms/Triangulo.cpp.o -o lp2_3 

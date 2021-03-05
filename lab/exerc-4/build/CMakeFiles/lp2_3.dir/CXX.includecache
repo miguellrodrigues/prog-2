@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/miguel/projects/dev/prog-2/lab/exerc-4/Base.hpp
+utility
+-
+
+/home/miguel/projects/dev/prog-2/lab/exerc-4/forms/Circulo.hpp
+../Base.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-4/Base.hpp
+
+/home/miguel/projects/dev/prog-2/lab/exerc-4/forms/Quadrado.hpp
+../Base.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-4/Base.hpp
+
+/home/miguel/projects/dev/prog-2/lab/exerc-4/forms/Triangulo.hpp
+../Base.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-4/Base.hpp
+
+/home/miguel/projects/dev/prog-2/lab/exerc-4/main.cpp
+iostream
+-
+forms/Quadrado.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-4/forms/Quadrado.hpp
+forms/Triangulo.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-4/forms/Triangulo.hpp
+forms/Circulo.hpp
+/home/miguel/projects/dev/prog-2/lab/exerc-4/forms/Circulo.hpp
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/trab-2.dir/AudioBook.cpp.o CMakeFiles/trab-2.dir/Book.cpp.o CMakeFiles/trab-2.dir/Publication.cpp.o CMakeFiles/trab-2.dir/main.cpp.o  -o trab-2 
